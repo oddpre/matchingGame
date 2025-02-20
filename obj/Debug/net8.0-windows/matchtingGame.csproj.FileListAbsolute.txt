@@ -1,0 +1,16 @@
+C:\Users\oddy-\source\repos\matchtingGame\bin\Debug\net8.0-windows\matchtingGame.exe
+C:\Users\oddy-\source\repos\matchtingGame\bin\Debug\net8.0-windows\matchtingGame.deps.json
+C:\Users\oddy-\source\repos\matchtingGame\bin\Debug\net8.0-windows\matchtingGame.runtimeconfig.json
+C:\Users\oddy-\source\repos\matchtingGame\bin\Debug\net8.0-windows\matchtingGame.dll
+C:\Users\oddy-\source\repos\matchtingGame\bin\Debug\net8.0-windows\matchtingGame.pdb
+C:\Users\oddy-\source\repos\matchtingGame\obj\Debug\net8.0-windows\matchtingGame.MatchingGame.resources
+C:\Users\oddy-\source\repos\matchtingGame\obj\Debug\net8.0-windows\matchtingGame.csproj.GenerateResource.cache
+C:\Users\oddy-\source\repos\matchtingGame\obj\Debug\net8.0-windows\matchtingGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oddy-\source\repos\matchtingGame\obj\Debug\net8.0-windows\matchtingGame.AssemblyInfoInputs.cache
+C:\Users\oddy-\source\repos\matchtingGame\obj\Debug\net8.0-windows\matchtingGame.AssemblyInfo.cs
+C:\Users\oddy-\source\repos\matchtingGame\obj\Debug\net8.0-windows\matchtingGame.csproj.CoreCompileInputs.cache
+C:\Users\oddy-\source\repos\matchtingGame\obj\Debug\net8.0-windows\matchtingGame.dll
+C:\Users\oddy-\source\repos\matchtingGame\obj\Debug\net8.0-windows\refint\matchtingGame.dll
+C:\Users\oddy-\source\repos\matchtingGame\obj\Debug\net8.0-windows\matchtingGame.pdb
+C:\Users\oddy-\source\repos\matchtingGame\obj\Debug\net8.0-windows\matchtingGame.genruntimeconfig.cache
+C:\Users\oddy-\source\repos\matchtingGame\obj\Debug\net8.0-windows\ref\matchtingGame.dll
