@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\oddy-\\Source\\Repos\\matchingGame\\matchtingGame.csproj": {}
+    "C:\\Users\\oddy-\\source\\repos\\matchingGame\\matchtingGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\oddy-\\Source\\Repos\\matchingGame\\matchtingGame.csproj": {
+    "C:\\Users\\oddy-\\source\\repos\\matchingGame\\matchtingGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oddy-\\Source\\Repos\\matchingGame\\matchtingGame.csproj",
+        "projectUniqueName": "C:\\Users\\oddy-\\source\\repos\\matchingGame\\matchtingGame.csproj",
         "projectName": "matchtingGame",
-        "projectPath": "C:\\Users\\oddy-\\Source\\Repos\\matchingGame\\matchtingGame.csproj",
+        "projectPath": "C:\\Users\\oddy-\\source\\repos\\matchingGame\\matchtingGame.csproj",
         "packagesPath": "C:\\Users\\oddy-\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oddy-\\Source\\Repos\\matchingGame\\obj\\",
+        "outputPath": "C:\\Users\\oddy-\\source\\repos\\matchingGame\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
