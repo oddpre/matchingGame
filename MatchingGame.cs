@@ -2,6 +2,9 @@ namespace matchtingGame
 {
 
     //Something messed up, so I manually copy pasted all 16 tiles into the program. Surely I can do somehting to make the file size smaller, but I did it the lazy way, again....
+    //I know where it messed up - the event handler when I tried to select all the tiles messed up. I clicked wrong and then I couldn't fix it like at all not even revert it.
+    //the important part is that it works, and it is not slow, although it could have been faster I guess. I am happy with the result.
+    
     public partial class MatchingGame : Form
     {
         //first clicked points to the first Label control that the player clicks. It will be null if the player haasn't started yet.
@@ -103,9 +106,7 @@ namespace matchtingGame
 
         private void label2_Click(object sender, EventArgs e)
         {
-            // The timer is only on after two non-matching 
-            // icons have been shown to the player, 
-            // so ignore any clicks if the timer is running
+ 
             if (timer1.Enabled == true)
                 return;
 
@@ -113,16 +114,10 @@ namespace matchtingGame
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -130,18 +125,12 @@ namespace matchtingGame
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
                 CheckForWinner();
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+
                 if (firstClicked.Text == secondClicked.Text)
                 {
                     firstClicked = null;
@@ -154,9 +143,7 @@ namespace matchtingGame
         }
         private void label3_Click(object sender, EventArgs e)
         {
-            // The timer is only on after two non-matching 
-            // icons have been shown to the player, 
-            // so ignore any clicks if the timer is running
+
             if (timer1.Enabled == true)
                 return;
 
@@ -164,16 +151,11 @@ namespace matchtingGame
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -181,18 +163,12 @@ namespace matchtingGame
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
                 CheckForWinner();
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+
                 if (firstClicked.Text == secondClicked.Text)
                 {
                     firstClicked = null;
@@ -205,9 +181,7 @@ namespace matchtingGame
         }
         private void label4_Click(object sender, EventArgs e)
         {
-            // The timer is only on after two non-matching 
-            // icons have been shown to the player, 
-            // so ignore any clicks if the timer is running
+
             if (timer1.Enabled == true)
                 return;
 
@@ -215,16 +189,11 @@ namespace matchtingGame
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+ 
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -232,18 +201,11 @@ namespace matchtingGame
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
                 CheckForWinner();
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+
                 if (firstClicked.Text == secondClicked.Text)
                 {
                     firstClicked = null;
@@ -256,9 +218,7 @@ namespace matchtingGame
         }
         private void label5_Click(object sender, EventArgs e)
         {
-            // The timer is only on after two non-matching 
-            // icons have been shown to the player, 
-            // so ignore any clicks if the timer is running
+
             if (timer1.Enabled == true)
                 return;
 
@@ -266,16 +226,11 @@ namespace matchtingGame
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+        
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -283,18 +238,12 @@ namespace matchtingGame
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
                 CheckForWinner();
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+
                 if (firstClicked.Text == secondClicked.Text)
                 {
                     firstClicked = null;
@@ -307,9 +256,7 @@ namespace matchtingGame
         }
         private void label6_Click(object sender, EventArgs e)
         {
-            // The timer is only on after two non-matching 
-            // icons have been shown to the player, 
-            // so ignore any clicks if the timer is running
+
             if (timer1.Enabled == true)
                 return;
 
@@ -317,16 +264,11 @@ namespace matchtingGame
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -334,18 +276,12 @@ namespace matchtingGame
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
                 CheckForWinner();
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+
                 if (firstClicked.Text == secondClicked.Text)
                 {
                     firstClicked = null;
@@ -358,9 +294,7 @@ namespace matchtingGame
         }
         private void label7_Click(object sender, EventArgs e)
         {
-            // The timer is only on after two non-matching 
-            // icons have been shown to the player, 
-            // so ignore any clicks if the timer is running
+
             if (timer1.Enabled == true)
                 return;
 
@@ -368,16 +302,11 @@ namespace matchtingGame
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+  
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -385,18 +314,12 @@ namespace matchtingGame
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
                 CheckForWinner();
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+
                 if (firstClicked.Text == secondClicked.Text)
                 {
                     firstClicked = null;
@@ -409,9 +332,7 @@ namespace matchtingGame
         }
         private void label8_Click(object sender, EventArgs e)
         {
-            // The timer is only on after two non-matching 
-            // icons have been shown to the player, 
-            // so ignore any clicks if the timer is running
+
             if (timer1.Enabled == true)
                 return;
 
@@ -419,16 +340,10 @@ namespace matchtingGame
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -436,18 +351,12 @@ namespace matchtingGame
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
                 CheckForWinner();
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+  
                 if (firstClicked.Text == secondClicked.Text)
                 {
                     firstClicked = null;
@@ -460,9 +369,7 @@ namespace matchtingGame
         }
         private void label9_Click(object sender, EventArgs e)
         {
-            // The timer is only on after two non-matching 
-            // icons have been shown to the player, 
-            // so ignore any clicks if the timer is running
+
             if (timer1.Enabled == true)
                 return;
 
@@ -470,16 +377,11 @@ namespace matchtingGame
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+  
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+ 
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -487,18 +389,12 @@ namespace matchtingGame
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
                 CheckForWinner();
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+
                 if (firstClicked.Text == secondClicked.Text)
                 {
                     firstClicked = null;
@@ -511,9 +407,7 @@ namespace matchtingGame
         }
         private void label10_Click(object sender, EventArgs e)
         {
-            // The timer is only on after two non-matching 
-            // icons have been shown to the player, 
-            // so ignore any clicks if the timer is running
+
             if (timer1.Enabled == true)
                 return;
 
@@ -521,16 +415,11 @@ namespace matchtingGame
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -538,18 +427,11 @@ namespace matchtingGame
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
                 CheckForWinner();
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
                 if (firstClicked.Text == secondClicked.Text)
                 {
                     firstClicked = null;
@@ -562,9 +444,7 @@ namespace matchtingGame
         }
         private void label11_Click(object sender, EventArgs e)
         {
-            // The timer is only on after two non-matching 
-            // icons have been shown to the player, 
-            // so ignore any clicks if the timer is running
+
             if (timer1.Enabled == true)
                 return;
 
@@ -572,16 +452,11 @@ namespace matchtingGame
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -589,17 +464,10 @@ namespace matchtingGame
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
                 CheckForWinner();
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+
                 if (firstClicked.Text == secondClicked.Text)
                 {
                     firstClicked = null;
@@ -612,9 +480,7 @@ namespace matchtingGame
         }
         private void label12_Click(object sender, EventArgs e)
         {
-            // The timer is only on after two non-matching 
-            // icons have been shown to the player, 
-            // so ignore any clicks if the timer is running
+
             if (timer1.Enabled == true)
                 return;
 
@@ -622,16 +488,11 @@ namespace matchtingGame
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -639,18 +500,12 @@ namespace matchtingGame
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
                 CheckForWinner();
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+
                 if (firstClicked.Text == secondClicked.Text)
                 {
                     firstClicked = null;
@@ -663,9 +518,7 @@ namespace matchtingGame
         }
         private void label13_Click(object sender, EventArgs e)
         {
-            // The timer is only on after two non-matching 
-            // icons have been shown to the player, 
-            // so ignore any clicks if the timer is running
+
             if (timer1.Enabled == true)
                 return;
 
@@ -673,16 +526,11 @@ namespace matchtingGame
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -690,18 +538,12 @@ namespace matchtingGame
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
                 CheckForWinner();
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+
                 if (firstClicked.Text == secondClicked.Text)
                 {
                     firstClicked = null;
@@ -714,9 +556,7 @@ namespace matchtingGame
         }
         private void label14_Click(object sender, EventArgs e)
         {
-            // The timer is only on after two non-matching 
-            // icons have been shown to the player, 
-            // so ignore any clicks if the timer is running
+
             if (timer1.Enabled == true)
                 return;
 
@@ -724,16 +564,11 @@ namespace matchtingGame
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -741,18 +576,12 @@ namespace matchtingGame
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
                 CheckForWinner();
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+
                 if (firstClicked.Text == secondClicked.Text)
                 {
                     firstClicked = null;
@@ -765,9 +594,7 @@ namespace matchtingGame
         }
         private void label15_Click(object sender, EventArgs e)
         {
-            // The timer is only on after two non-matching 
-            // icons have been shown to the player, 
-            // so ignore any clicks if the timer is running
+
             if (timer1.Enabled == true)
                 return;
 
@@ -775,16 +602,11 @@ namespace matchtingGame
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -792,18 +614,12 @@ namespace matchtingGame
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
 
                 CheckForWinner();
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+  
                 if (firstClicked.Text == secondClicked.Text)
                 {
                     firstClicked = null;
@@ -816,9 +632,7 @@ namespace matchtingGame
         }
         private void label16_Click(object sender, EventArgs e)
         {
-            // The timer is only on after two non-matching 
-            // icons have been shown to the player, 
-            // so ignore any clicks if the timer is running
+
             if (timer1.Enabled == true)
                 return;
 
@@ -826,16 +640,11 @@ namespace matchtingGame
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+  
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -843,18 +652,12 @@ namespace matchtingGame
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
 
                 CheckForWinner();
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+
                 if (firstClicked.Text == secondClicked.Text)
                 {
                     firstClicked = null;
@@ -901,7 +704,7 @@ namespace matchtingGame
             // If the loop didn’t return, it didn't find
             // any unmatched icons
             // That means the user won. Show a message and close the form
-            MessageBox.Show("You matched all the icons!", "Congratulations");
+            MessageBox.Show("Who won? You won! Who's next?!", "Congratulations! Drop it like it's hot.");
             Close();
         }
 
